@@ -1,0 +1,26 @@
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js" crossorigin="anonymous"></script>
+<script>
+  function moviePosterUrl(movie) {
+    if(movie.poster_path) {
+      return "https://image.tmdb.org/t/p/w500" + movie.poster_path;
+    }
+    else {
+      return "https://via.placeholder.com/750?text=Missing+Image";
+    }
+  }
+
+  function movieAverage(vote) {
+    switch (true) {
+    case vote >= 75:
+      return `<span class="mli-quality mli-quality-high">${vote}%</span>`;
+      break;
+    case vote >= 45:
+      return `<span class="mli-quality mli-quality-medium">${vote}%</span>`;
+      break;
+    default:
+      return `<span class="mli-quality mli-quality-low">${vote}%</span>`;
+      break;
+    }
+  }
+</script>

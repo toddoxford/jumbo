@@ -1,0 +1,10 @@
+<div class="ml-item">
+  <a href="/movie/<%= movie.id %>">
+    <span class="mli-quality <%- helper.quality(movie.vote_average) %>"><%= helper.rating(movie.vote_average) %></span>
+    <img src="<%- helper.posterUrl(movie) %>" alt="<%= movie.title %>" class="mli-poster">
+    <div class="mli-info">
+      <h3><%= movie.title %></h3>
+      <span><%= new Date(movie.release_date).toLocaleDateString("en-US", { month: 'long', year: 'numeric' }) %></span>
+    </div>
+  </a>
+</div>
