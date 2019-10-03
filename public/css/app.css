@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700);
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   background: #081B23;
@@ -15,9 +17,11 @@ body {
   -webkit-text-size-adjust: none;
   position: relative;
 }
+
 a {
   background-color: transparent;
 }
+
 a:active, a:hover {
   outline: 0;
 }
@@ -31,9 +35,11 @@ a:active, a:hover {
   width: 5rem;
   background-color: #081B23;
 }
+
 .highlight {
   background: radial-gradient(82.98% 213.08% at 53.46% -21.35%, rgba(5, 112, 172, 0.46) 0%, rgba(8, 27, 35, 0) 100%);
 }
+
 .pipes {
   background-size: cover;
   background-position: 50% 25%;
@@ -45,28 +51,35 @@ a:active, a:hover {
   margin-top: -20px;
   position: relative;
 }
+
 #search .search-content {
   position: relative;
   border-radius: 2rem;
   background-color: #fff;
   padding: 2px 8px;
 }
+
 #search input.search-input {
   padding-right: 50px;
   box-shadow: none;
   border: none;
   border-radius: 2rem;
 }
+
 #search input::placeholder, #search .fa {
   color: #01D277;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
+
 #search input:-ms-input-placeholder {
   color: #01D277;
 }
+
 #search input::-ms-input-placeholder {
   color: #01D27;
 }
+
 #search .search-submit {
   display: inline-block;
   font-size: 18px;
@@ -79,6 +92,7 @@ a:active, a:hover {
   background: none;
   border: none;
 }
+
 #search .search-submit i {
   line-height: 39px;
 }
@@ -88,10 +102,12 @@ a:active, a:hover {
   overflow: hidden;
   margin: 0 0 20px;
 }
+
 .movies-list-wrap .ml-title {
   display: block;
   margin-top: 30px;
 }
+
 .movies-list-wrap .ml-title span {
   font-size: 20px;
   font-weight: 400;
@@ -106,6 +122,7 @@ a:active, a:hover {
   display: block;
   margin: 0 -1%;
 }
+
 .movies-list .ml-item {
   width: 144px;
   height: 298px;
@@ -115,6 +132,7 @@ a:active, a:hover {
   position: relative;
   overflow: hidden;
 }
+
 .movies-list .ml-item .mli-quality {
   background: #01D277;
   border-radius: 10px;
@@ -130,12 +148,15 @@ a:active, a:hover {
   width: auto;
   z-index: 4;
 }
+
 .movies-list .ml-item .mli-quality.mli-quality-high {
   background: #01D277;
 }
+
 .movies-list .ml-item .mli-quality.mli-quality-medium {
   background: #4902A3;
 }
+
 .movies-list .ml-item .mli-quality.mli-quality-low {
   background: #D1225B;
 }
@@ -144,6 +165,7 @@ a:active, a:hover {
   width: 100%;
   border-radius: 5px;
 }
+
 .movies-list .ml-item .mli-info {
   /* position: absolute;
   bottom: 0;
@@ -154,6 +176,7 @@ a:active, a:hover {
   /* background: url(../images/mask-title.png) top repeat-x; */
   z-index: 5;
 }
+
 .movies-list .ml-item .mli-info h3 {
   font-size: 14px;
   line-height: 16px;
@@ -162,6 +185,7 @@ a:active, a:hover {
   color: #E6F7FF;
   margin: 0;
 }
+
 .movies-list .ml-item .mli-info span {
   font-size: 12px;
   line-height: 14px;
@@ -188,6 +212,16 @@ a:active, a:hover {
 
 .movie-info .movie-cover .back-arrow a {
   color: #fff;
+  padding: 10px;
+}
+
+.movie-info .movie-cover .back-arrow a:hover {
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(255,255,255,.4);
+  padding: 10px;
 }
 
 .movie-info .movie-poster {
@@ -198,24 +232,27 @@ a:active, a:hover {
   position: relative;
   overflow: hidden;
   margin-top: -65px;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .movie-info h1, h2 {
   font-family: 'Montserrat', sans-serif;
   color: #E3F4FC;
 }
+
 .movie-info h1 {
   font-weight: bold;
   font-size: 28px;
   line-height: 30px;
   padding: 10px 0;
 }
+
 .movie-info h2 {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
 }
+
 .movie-info .movie-details p {
   font-size: 12px;
   line-height: 21px;
@@ -226,7 +263,6 @@ a:active, a:hover {
   border: 1px solid #0F303D;
   box-sizing: border-box;
 }
-
 
 @media (min-width: 576px) {
   .movies-list .ml-item {

@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.listen(process.env.PORT || 3000, function() {
-  console.log('Your node js server is running');
+  console.log('Your node js server is running on localhost:' + process.env.PORT);
 });
 
 // Routes
