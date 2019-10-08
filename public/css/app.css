@@ -64,6 +64,7 @@ a:active, a:hover {
   box-shadow: none;
   border: none;
   border-radius: 2rem;
+  width: 100%;
 }
 
 #search input::placeholder, #search .fa {
