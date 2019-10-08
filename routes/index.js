@@ -38,8 +38,8 @@ exports.search = function (req, res) {
 
 // Movie details
 exports.movie = function (req, res) {
-  console.log(req.params.q);
-  axios.get('https://api.themoviedb.org/3/movie/'+req.params.q+'?api_key='+api_key+'&language=en-US')
+  console.log(req.params.id);
+  axios.get('https://api.themoviedb.org/3/movie/'+req.params.id+'?api_key='+api_key+'&language=en-US')
   .then((response) => {
     let movie = response.data;
     console.log(movie);
