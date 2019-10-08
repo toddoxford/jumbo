@@ -7,7 +7,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12 pipes">
-        <img class="logo" src="https://www.themoviedb.org/assets/2/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg" alt="" width="66px">
+        <a href="/">
+          <img class="logo" src="https://www.themoviedb.org/assets/2/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg" alt="" width="66px">
+        </a>
       </div>
     </div>
     <div class="row">
@@ -15,7 +17,7 @@
         <div id="search">
           <div class="search-content">
             <form id="search_form" class="form-inline active-cyan-4" action="/" method="post">
-              <input autocomplete="off" class="form-control search-input" maxlength="100" name="search_criteria" placeholder="Search" type="text">
+              <input autocomplete="off" class="form-control search-input" maxlength="100" name="search_criteria" placeholder="Search" type="text" value="<%= search_txt %>">
               <button class="search-submit" type="submit"><i class="fa fa-search"></i></button>
             </form>
           </div>
@@ -36,31 +38,6 @@
     </div>
   </div>
   <% include partials/scripts.ejs %>
-
-  <script>
-    function moviePosterUrl(movie) {
-      if(movie.poster_path) {
-        return "https://image.tmdb.org/t/p/w500" + movie.poster_path;
-      }
-      else {
-        return "https://via.placeholder.com/750?text=Missing+Image";
-      }
-    }
-
-    function movieAverage(vote) {
-      switch (true) {
-      case vote >= 75:
-        return `<span class="mli-quality mli-quality-high">${vote}%</span>`;
-        break;
-      case vote >= 45:
-        return `<span class="mli-quality mli-quality-medium">${vote}%</span>`;
-        break;
-      default:
-        return `<span class="mli-quality mli-quality-low">${vote}%</span>`;
-        break;
-      }
-    }
-  </script>
 </body>
 
 </html>
