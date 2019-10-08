@@ -15,6 +15,6 @@ app.listen(process.env.PORT || 3000, function() {
 
 // Routes
 app.get('/', routes.root);
-app.get('/?q=:search', routes.search);
+app.post('/', routes.search);
 app.get('/movie/:id', routes.movie);
 app.get('*', routes.error);
